@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>risks · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html">markets and hours</a>
+<a href="orders-and-margin.html">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html">funding and liquidation</a>
+<a href="fees.html">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html">deposits and withdrawals</a>
+<a href="account-and-security.html">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html">points and season zero</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<div class="grp">fine print</div>
+<a href="risks.html" class="on">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="risks">risks</h1>
+<p>read this once, properly.</p>
+<h2 id="leverage">leverage</h2>
+<p>Leverage multiplies both gains and losses. A 10x position loses 10% of its margin for every 1% the price moves against you and is liquidated at roughly a 10% move. Liquidation closes the position at the mark price and charges a fee; you can lose the whole margin behind a position. In cross margin you can lose the whole account.</p>
+<h2 id="stock-perps-outside-market-hours">stock perps outside market hours</h2>
+<p>Stock perps trade while the underlying market is closed. Overnight and over weekends the perp price is set by this desk's order book and funding, not by the stock exchange. When the exchange opens, the index snaps to the live price. Gaps at the open, after earnings, or after news can be large, and stop orders may fill far from their trigger. Do not hold a stock perp through the open with margin you cannot afford to lose.</p>
+<h2 id="funding">funding</h2>
+<p>Funding payments are charged on your full position size, not on your margin. Sustained one-sided funding, common on stock perps overnight, can consume margin even when the price does not move.</p>
+<h2 id="liquidity">liquidity</h2>
+<p>Some markets are thinner than others, especially off-hours. Market orders in thin books fill at worse prices than the last trade suggests. Use limit orders when size matters.</p>
+<h2 id="technology">technology</h2>
+<p>The desk is software running on a public blockchain and on third-party infrastructure. Outages, chain congestion, oracle delays, wallet bugs, front-end bugs and smart contract vulnerabilities are all possible. During an outage you may be unable to close a position. Never run size that depends on being able to exit at any second.</p>
+<h2 id="regulatory">regulatory</h2>
+<p>Perpetual futures are restricted or prohibited in some jurisdictions. It is your responsibility to know whether you may use this desk. Restricted regions are blocked at connect; circumventing that block breaches the terms.</p>
+<h2 id="no-advice-no-guarantees">no advice, no guarantees</h2>
+<p>Nothing on the desk, the site, these docs or our social accounts is investment advice. Points, referral rewards and any future token are programs that can change or end. Past fee revenue is not a promise of future revenue.</p>
+<h2 id="the-rule">the rule</h2>
+<p>Only trade with money you can afford to lose entirely. That is not a disclaimer; it is how leverage works.</p>
+    </article>
+    <footer class="foot">
+      <span>updated 20 sep 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#leverage">leverage</a></li>
+<li><a href="#stock-perps-outside-market-hours">stock perps outside market hours</a></li>
+<li><a href="#funding">funding</a></li>
+<li><a href="#liquidity">liquidity</a></li>
+<li><a href="#technology">technology</a></li>
+<li><a href="#regulatory">regulatory</a></li>
+<li><a href="#no-advice-no-guarantees">no advice, no guarantees</a></li>
+<li><a href="#the-rule">the rule</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>

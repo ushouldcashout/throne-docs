@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>how the desk works · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html" class="on">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html">markets and hours</a>
+<a href="orders-and-margin.html">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html">funding and liquidation</a>
+<a href="fees.html">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html">deposits and withdrawals</a>
+<a href="account-and-security.html">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html">points and season zero</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<div class="grp">fine print</div>
+<a href="risks.html">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="how-the-desk-works">how the desk works</h1>
+<p>the venue in one page: who trades, who funds, who gets paid.</p>
+<h2 id="the-desk">the desk</h2>
+<p>The desk is the trading venue at <a href="https://trade.throne.network">trade.throne.network</a>. It lists perpetual futures on stocks and crypto, settles in USD terms, and runs on Robinhood Chain. Orders match on a central limit order book with a visible depth, last trades, and a chart. Every trade pays a fee to the desk.</p>
+<h2 id="the-vault">the vault</h2>
+<p>The vault is the capital behind the venue. People who fund it are the reason the desk can run deep books and pay out programs. The fees the desk earns flow to them. That is the whole model: traders pay fees, the fees pay the court.</p>
+<h2 id="the-court">the court</h2>
+<p>The court is the name for the people who fund the vault and hold its seats. Priority access to the court is the reward for the most active traders each season. We publish who qualifies and when on <a href="https://x.com/thronedefi">@thronedefi</a>; the mechanics of the court itself are announced there, not here.</p>
+<h2 id="what-runs-where">what runs where</h2>
+<table class="left">
+<thead>
+<tr>
+<th>piece</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trading, margin, liquidation, settlement</td>
+<td>Robinhood Chain (chain id 4663)</td>
+</tr>
+<tr>
+<td>collateral</td>
+<td>USDG on Robinhood Chain; USDC accepted from supported chains</td>
+</tr>
+<tr>
+<td>account balance</td>
+<td>shown in USD terms</td>
+</tr>
+<tr>
+<td>points</td>
+<td>tracked by the desk, shown at <a href="https://throne.network/points">throne.network/points</a></td>
+</tr>
+<tr>
+<td>referrals</td>
+<td>on the desk under <strong>Referrals</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="timeline">timeline</h2>
+<table class="left">
+<thead>
+<tr>
+<th>date</th>
+<th>what</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>25 sep 2026</td>
+<td>desk opens to the public. season zero points start.</td>
+</tr>
+<tr>
+<td>26 sep 2026</td>
+<td>season zero trading competition announced on @thronedefi</td>
+</tr>
+<tr>
+<td>2 oct – 2 dec 2026</td>
+<td>competition scoring window</td>
+</tr>
+<tr>
+<td>2 dec 2026</td>
+<td>season zero ends</td>
+</tr>
+</tbody>
+</table>
+    </article>
+    <footer class="foot">
+      <span>updated 20 sep 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#the-desk">the desk</a></li>
+<li><a href="#the-vault">the vault</a></li>
+<li><a href="#the-court">the court</a></li>
+<li><a href="#what-runs-where">what runs where</a></li>
+<li><a href="#timeline">timeline</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>

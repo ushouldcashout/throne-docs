@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>points and season zero · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html">markets and hours</a>
+<a href="orders-and-margin.html">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html">funding and liquidation</a>
+<a href="fees.html">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html">deposits and withdrawals</a>
+<a href="account-and-security.html">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html" class="on">points and season zero</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<div class="grp">fine print</div>
+<a href="risks.html">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="points-and-season-zero">points and season zero</h1>
+<p>every taker trade earns points. season zero runs 25 september to 2 december 2026.</p>
+<h2 id="how-points-accrue">how points accrue</h2>
+<ul>
+<li><strong>1 point per $10 of taker volume.</strong> A $10,000 market order earns 1,000 points.</li>
+<li>Maker fills (resting limit orders) earn <strong>no points</strong>. Points reward traders who take liquidity and pay the fee.</li>
+<li>Points are counted per account, in real time, and shown at <a href="https://throne.network/points">throne.network/points</a> and in the desk's <strong>Points</strong> tab.</li>
+<li>Points never expire within a season. Each season starts from zero.</li>
+</ul>
+<h2 id="season-zero">season zero</h2>
+<table class="left">
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>starts</td>
+<td>25 sep 2026, when the desk opens</td>
+</tr>
+<tr>
+<td>ends</td>
+<td>2 dec 2026</td>
+</tr>
+<tr>
+<td>trading competition</td>
+<td>scored <strong>2 oct to 2 dec 2026</strong>. rules and rewards announced on @thronedefi on 26 sep.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-points-are-for">what points are for</h2>
+<p>Points decide your rank on the season leaderboard. Rank decides who gets <strong>priority access to the court</strong> and who shares the season's prizes. The specific ladder and prizes for season zero are published on @thronedefi and on the points page when the competition is announced, and mirrored here the same day.</p>
+<h2 id="anti-wash-rules">anti-wash rules</h2>
+<p>Points exist to reward real taking. To keep it that way:</p>
+<ul>
+<li>Only taker fills count.</li>
+<li>Per-account caps apply to volume that round-trips within seconds.</li>
+<li>Obvious wash patterns (matching your own orders across accounts, back-and-forth with a partner at no risk) are reviewed manually and zeroed.</li>
+<li>Rankings are final only at season end, after review.</li>
+</ul>
+<h2 id="what-points-are-not">what points are not</h2>
+<p>Points are not a token, not a claim on anything, and carry no promise of future value. They are a leaderboard.</p>
+    </article>
+    <footer class="foot">
+      <span>updated 20 sep 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#how-points-accrue">how points accrue</a></li>
+<li><a href="#season-zero">season zero</a></li>
+<li><a href="#what-points-are-for">what points are for</a></li>
+<li><a href="#anti-wash-rules">anti-wash rules</a></li>
+<li><a href="#what-points-are-not">what points are not</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>deposits and withdrawals · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html">markets and hours</a>
+<a href="orders-and-margin.html">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html">funding and liquidation</a>
+<a href="fees.html">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html" class="on">deposits and withdrawals</a>
+<a href="account-and-security.html">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html">points and season zero</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<div class="grp">fine print</div>
+<a href="risks.html">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="deposits-and-withdrawals">deposits and withdrawals</h1>
+<p>fund in one step, from where your money already is.</p>
+<h2 id="what-the-desk-accepts">what the desk accepts</h2>
+<table class="left">
+<thead>
+<tr>
+<th>chain</th>
+<th>asset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Robinhood Chain</td>
+<td><strong>USDG</strong></td>
+</tr>
+<tr>
+<td>Arbitrum, Base, Optimism, Ethereum, BNB Chain, Avalanche, Mantle, Sei, Sonic, Berachain, Abstract, X Layer, and others listed in the deposit dialog</td>
+<td><strong>USDC</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Whatever you send, your account balance shows in USD terms and every market on the desk is available. Robinhood Chain is the desk's home and appears first in the list; the other chains are there so you do not have to bridge before you trade.</p>
+<h2 id="depositing">depositing</h2>
+<ol>
+<li>Connect your wallet and sign in (one signature, no gas).</li>
+<li>Open <strong>Deposit</strong> from the account menu or the order form.</li>
+<li>Pick the chain your funds are on, enter the amount, approve if asked, confirm.</li>
+<li>Deposits from Robinhood Chain credit within a minute. Deposits from other chains take a few minutes while they cross.</li>
+</ol>
+<p>The desk shows an estimated arrival time in the dialog. The minimum deposit is shown there too.</p>
+<h2 id="withdrawing">withdrawing</h2>
+<ol>
+<li>Open <strong>Withdraw</strong> from the account menu.</li>
+<li>Pick the chain you want to receive on and the amount.</li>
+<li>Confirm. Funds arrive as USDG on Robinhood Chain or USDC on the other chains.</li>
+</ol>
+<p>Withdrawals need free collateral: you cannot withdraw margin that is holding a position open. If a withdrawal is partly blocked, the dialog tells you how much is available and why.</p>
+<h2 id="fees-on-moving-money">fees on moving money</h2>
+<p>The desk does not charge to deposit or withdraw. You pay the network's gas on the sending chain, and cross-chain withdrawals include the bridge's cost, shown before you confirm.</p>
+<h2 id="subaccounts">subaccounts</h2>
+<p>You can create subaccounts from the account menu to separate strategies. Each has its own balance, positions and risk rate. Transfers between your accounts are instant and free.</p>
+    </article>
+    <footer class="foot">
+      <span>updated 20 sep 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#what-the-desk-accepts">what the desk accepts</a></li>
+<li><a href="#depositing">depositing</a></li>
+<li><a href="#withdrawing">withdrawing</a></li>
+<li><a href="#fees-on-moving-money">fees on moving money</a></li>
+<li><a href="#subaccounts">subaccounts</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>

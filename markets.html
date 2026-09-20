@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>markets and hours · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html" class="on">markets and hours</a>
+<a href="orders-and-margin.html">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html">funding and liquidation</a>
+<a href="fees.html">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html">deposits and withdrawals</a>
+<a href="account-and-security.html">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html">points and season zero</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<div class="grp">fine print</div>
+<a href="risks.html">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="markets-and-hours">markets and hours</h1>
+<p>perpetual futures on stocks and crypto, 24 hours a day, 7 days a week.</p>
+<h2 id="what-a-perp-is">what a perp is</h2>
+<p>A perpetual future is a contract that tracks the price of an asset without expiring. You never hold the stock or the coin. You hold a long or short position, marked to a reference price, with funding payments that keep the perp near the underlying. You can close any time the desk is open, which is always.</p>
+<h2 id="markets">markets</h2>
+<p>The desk lists crypto perps (BTC, ETH, SOL and others) and stock perps (large US names). The full list, with current price, 24h change, funding and open interest, is under <strong>Markets</strong> on the desk, and the symbol in the top bar of the trade page opens the same list.</p>
+<p>Each market has its own maximum leverage and minimum order size. Both are shown on the order form before you submit.</p>
+<h2 id="stock-perps-when-the-market-is-closed">stock perps when the market is closed</h2>
+<p>Stocks trade on exchanges roughly 9:30 to 16:00 New York time on weekdays. The perps on this desk do not stop.</p>
+<ul>
+<li><strong>During market hours</strong> the index price tracks the underlying stock in real time, and the perp trades tightly around it.</li>
+<li><strong>Outside market hours</strong> there is no live stock print. The perp keeps trading on its own order book. Its mark price is derived from the book and the last index, and funding pulls it back toward where the stock last traded. Where pre-market and after-hours prices exist, the index uses them.</li>
+<li><strong>At the open</strong> the index snaps to the live stock price. If the perp drifted overnight, that gap closes fast. Positions held through the open can move sharply in either direction. Size accordingly.</li>
+</ul>
+<p>This is the defining feature of the desk and its main risk. Read <a href="risks.html">risks</a> before holding stock perps over a weekend or an earnings print.</p>
+<h2 id="prices-you-will-see">prices you will see</h2>
+<table class="left">
+<thead>
+<tr>
+<th>price</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>last</td>
+<td>the most recent trade on this desk</td>
+</tr>
+<tr>
+<td>mark</td>
+<td>the price used for margin, unrealised PnL and liquidation. Derived from index and book, resistant to single prints.</td>
+</tr>
+<tr>
+<td>index</td>
+<td>the reference price of the underlying, from external sources</td>
+</tr>
+<tr>
+<td>funding</td>
+<td>the periodic payment between longs and shorts, shown as a rate and a countdown</td>
+</tr>
+</tbody>
+</table>
+    </article>
+    <footer class="foot">
+      <span>updated 20 sep 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#what-a-perp-is">what a perp is</a></li>
+<li><a href="#markets">markets</a></li>
+<li><a href="#stock-perps-when-the-market-is-closed">stock perps when the market is closed</a></li>
+<li><a href="#prices-you-will-see">prices you will see</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>

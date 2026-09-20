@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>orders, margin, leverage · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html">markets and hours</a>
+<a href="orders-and-margin.html" class="on">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html">funding and liquidation</a>
+<a href="fees.html">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html">deposits and withdrawals</a>
+<a href="account-and-security.html">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html">points and season zero</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<div class="grp">fine print</div>
+<a href="risks.html">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="orders-margin-leverage">orders, margin, leverage</h1>
+<p>how to place a trade and what backs it.</p>
+<h2 id="order-types">order types</h2>
+<table class="left">
+<thead>
+<tr>
+<th>order</th>
+<th>behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>market</td>
+<td>fills immediately against the book at the best available prices. pays the taker fee.</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>rests on the book at your price. if it fills without crossing the spread it pays the maker fee, which is zero.</td>
+</tr>
+<tr>
+<td>stop market / stop limit</td>
+<td>triggers when the mark price reaches your trigger, then places a market or limit order</td>
+</tr>
+<tr>
+<td>take profit / stop loss</td>
+<td>attached to a position, closes it when the mark price reaches the level</td>
+</tr>
+<tr>
+<td>reduce only</td>
+<td>an order that can only shrink a position, never flip or grow it</td>
+</tr>
+<tr>
+<td>post only</td>
+<td>a limit order that is cancelled if it would take liquidity</td>
+</tr>
+</tbody>
+</table>
+<h2 id="margin-modes">margin modes</h2>
+<p><strong>Cross margin</strong> is the default. All positions share one pool of collateral. A winning position supports a losing one, and one liquidation can affect everything.</p>
+<p><strong>Isolated margin</strong> gives a position its own collateral. Only that collateral is at risk for that position. You pick the mode per market from the order form, before you have a position open in it.</p>
+<h2 id="leverage">leverage</h2>
+<p>Leverage is set per market with the slider on the order form, up to that market's maximum. Higher leverage means less collateral behind the same position and a liquidation price closer to entry. Changing leverage on a market with an open position changes the margin requirement for that position immediately.</p>
+<h2 id="the-risk-rate">the risk rate</h2>
+<p>The desk shows a <strong>risk rate</strong> for your account (cross) or position (isolated). It is the ratio of margin you are required to hold to the margin you actually have. At <strong>100%</strong> the position is liquidated. The desk plays a low siren at <strong>80%</strong> and repeats it every 30 seconds while you stay above that line. You can mute sounds with the pill in the bottom right.</p>
+<h2 id="sounds">sounds</h2>
+<p>The desk makes three sounds by default: a rising tone on a buy fill, a falling tone on a sell fill, and a chime when a position is closed or reduced. Plus the siren above. Mute them any time.</p>
+    </article>
+    <footer class="foot">
+      <span>updated 20 sep 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#order-types">order types</a></li>
+<li><a href="#margin-modes">margin modes</a></li>
+<li><a href="#leverage">leverage</a></li>
+<li><a href="#the-risk-rate">the risk rate</a></li>
+<li><a href="#sounds">sounds</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>

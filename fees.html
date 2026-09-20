@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fees · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html">markets and hours</a>
+<a href="orders-and-margin.html">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html">funding and liquidation</a>
+<a href="fees.html" class="on">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html">deposits and withdrawals</a>
+<a href="account-and-security.html">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html">points and season zero</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<div class="grp">fine print</div>
+<a href="risks.html">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="fees">fees</h1>
+<p>one number to remember: 4.5.</p>
+<h2 id="trading-fees">trading fees</h2>
+<table class="fees">
+<thead>
+<tr>
+<th></th>
+<th>fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>taker (market orders, limit orders that cross the spread)</td>
+<td><strong>4.5 bps</strong> (0.045%)</td>
+</tr>
+<tr>
+<td>maker (limit orders that rest and fill)</td>
+<td><strong>0 bps</strong></td>
+</tr>
+</tbody>
+</table>
+<p>A $10,000 market order pays <strong>$4.50</strong>. A $10,000 resting limit order that fills pays <strong>$0.00</strong>.</p>
+<p>That is the full price of a trade on the desk. There are no account fees, no deposit fees from the desk, and no withdrawal fee from the desk beyond the network cost of moving funds on-chain.</p>
+<h2 id="what-the-fee-does">what the fee does</h2>
+<p>Fees are the desk's revenue, and the desk's revenue is what pays the court and funds the programs on this site: referral rewards come out of it, season prizes come out of it. So the fee is not just a cost; it is the number that makes everything else here work.</p>
+<h2 id="other-charges-you-may-see">other charges you may see</h2>
+<table class="left">
+<thead>
+<tr>
+<th>charge</th>
+<th>when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>funding</td>
+<td>paid or received periodically while a position is open. See <a href="funding-and-liquidation.html">funding</a>.</td>
+</tr>
+<tr>
+<td>liquidation fee</td>
+<td>only if a position is liquidated</td>
+</tr>
+<tr>
+<td>network gas</td>
+<td>when you deposit or withdraw on-chain, paid to the chain, not to the desk</td>
+</tr>
+</tbody>
+</table>
+<h2 id="volume-tiers">volume tiers</h2>
+<p>There are none yet. Everyone pays 4.5 / 0. If tiers are introduced they will be announced on @thronedefi and written here first.</p>
+    </article>
+    <footer class="foot">
+      <span>updated 20 sep 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#trading-fees">trading fees</a></li>
+<li><a href="#what-the-fee-does">what the fee does</a></li>
+<li><a href="#other-charges-you-may-see">other charges you may see</a></li>
+<li><a href="#volume-tiers">volume tiers</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>

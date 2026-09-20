@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>funding and liquidation · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html">markets and hours</a>
+<a href="orders-and-margin.html">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html" class="on">funding and liquidation</a>
+<a href="fees.html">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html">deposits and withdrawals</a>
+<a href="account-and-security.html">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html">points and season zero</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<div class="grp">fine print</div>
+<a href="risks.html">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="funding-and-liquidation">funding and liquidation</h1>
+<p>the two mechanisms that keep the perp honest and the desk solvent.</p>
+<h2 id="funding">funding</h2>
+<p>Funding is a periodic payment between longs and shorts. When the perp trades above the index, longs pay shorts; below the index, shorts pay longs. The current rate and the countdown to the next payment are shown in the market bar on the trade page and on the Markets list.</p>
+<p>Funding is paid on the notional size of your position, not on your margin, so a 20x position pays 20x the funding of the same margin unleveraged. On stock perps funding is also what anchors the price when the underlying market is closed, so overnight rates can be larger than you are used to on crypto.</p>
+<p>Funding you pay or receive shows in your portfolio history.</p>
+<h2 id="liquidation">liquidation</h2>
+<p>If the mark price moves against you until your margin no longer covers the maintenance requirement, the position is liquidated. In cross margin this can take the whole account; in isolated margin only that position's collateral.</p>
+<p>What to expect:</p>
+<ul>
+<li>Liquidation happens at the <strong>mark price</strong>, not the last trade, so a single wick on the book does not liquidate you on its own.</li>
+<li>Large positions may be reduced in steps rather than closed at once.</li>
+<li>A liquidation fee is charged on the liquidated notional. It is shown in the fee schedule on the desk before you trade.</li>
+<li>If a position closes at a loss larger than its collateral, the shortfall is covered by the venue's insurance mechanism, not by other traders' balances.</li>
+</ul>
+<p>The desk gives you two warnings before this: the risk rate colour and the 80% siren. Adding collateral or reducing size resets both.</p>
+    </article>
+    <footer class="foot">
+      <span>updated 20 sep 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#funding">funding</a></li>
+<li><a href="#liquidation">liquidation</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>

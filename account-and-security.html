@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>account and security · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html">markets and hours</a>
+<a href="orders-and-margin.html">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html">funding and liquidation</a>
+<a href="fees.html">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html">deposits and withdrawals</a>
+<a href="account-and-security.html" class="on">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html">points and season zero</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<div class="grp">fine print</div>
+<a href="risks.html">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="account-and-security">account and security</h1>
+<p>your keys, your account, and what the desk never asks for.</p>
+<h2 id="connecting">connecting</h2>
+<p>The desk works with EVM wallets (browser extensions and mobile wallets via WalletConnect). Connecting does not move funds. Signing in creates a trading key for this device so you can place orders without signing every one; you can revoke it any time from <strong>Portfolio → API keys</strong>.</p>
+<h2 id="what-the-desk-will-never-do">what the desk will never do</h2>
+<ul>
+<li>Ask for your seed phrase or private key, anywhere, ever.</li>
+<li>DM you first on X, Telegram or Discord. Anyone doing that in our name is not us.</li>
+<li>Send you a link to "verify", "migrate" or "claim". Programs are announced on @thronedefi and paid to your desk balance automatically.</li>
+</ul>
+<p>Bookmark <a href="https://trade.throne.network">trade.throne.network</a> and type it yourself. Check the URL before you sign.</p>
+<h2 id="sign-in-and-sessions">sign-in and sessions</h2>
+<p>Your trading key lives in your browser. Clearing site data or switching browsers means signing in again. Each sign-in is one wallet signature and costs nothing.</p>
+<h2 id="restricted-regions">restricted regions</h2>
+<p>Some regions cannot use the desk. If yours is one of them, the desk tells you when you connect. Using a VPN to get around that is a breach of the <a href="https://throne.network/terms">terms</a>.</p>
+<h2 id="referral-codes-at-sign-up">referral codes at sign-up</h2>
+<p>If someone referred you, enter their code when you first sign in or on the Referrals page before your first trade. Codes bind permanently and cannot be changed or removed later.</p>
+    </article>
+    <footer class="foot">
+      <span>updated 20 sep 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#connecting">connecting</a></li>
+<li><a href="#what-the-desk-will-never-do">what the desk will never do</a></li>
+<li><a href="#sign-in-and-sessions">sign-in and sessions</a></li>
+<li><a href="#restricted-regions">restricted regions</a></li>
+<li><a href="#referral-codes-at-sign-up">referral codes at sign-up</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>
