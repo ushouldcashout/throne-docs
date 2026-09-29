@@ -16,7 +16,7 @@ NAV = [
     ("trading", [("markets", "markets and hours"), ("orders-and-margin", "orders, margin, leverage"),
                  ("funding-and-liquidation", "funding and liquidation"), ("fees", "fees")]),
     ("account", [("deposits-and-withdrawals", "deposits and withdrawals"), ("account-and-security", "account and security")]),
-    ("programs", [("referrals", "referrals"), ("points", "points and season zero"), ("the-court", "the court and $THRONE.")]),
+    ("programs", [("referrals", "referrals"), ("points", "points and the King Drop"), ("the-court", "the court and $THRONE.")]),
     ("fine print", [("risks", "risks"), ("support", "support and links")]),
 ]
 SITE = "https://docs.throne.network"
