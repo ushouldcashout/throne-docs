@@ -21,7 +21,7 @@ The court is the name for the people who fund the vault and hold its seats. Prio
 | trading, margin, liquidation, settlement | Robinhood Chain (chain id 4663) |
 | collateral | USDG on Robinhood Chain; USDC accepted from supported chains |
 | account balance | shown in USD terms |
-| points | tracked by the desk, shown at [throne.network/points](https://throne.network/points) |
+| points | scored from the venue's public rows, shown at [throne.network/points](https://throne.network/points) and the [board](https://throne.network/board) |
 | referrals | on the desk under **Referrals** |
 {: .left}
 

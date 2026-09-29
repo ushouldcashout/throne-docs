@@ -23,7 +23,7 @@ throne. is a desk for stocks and crypto perps, open 24/7, on robinhood chain. th
 | see exactly what a trade costs | [fees](fees.html) |
 | fund an account | [deposits and withdrawals](deposits-and-withdrawals.html) |
 | earn from referrals | [referrals](referrals.html) |
-| know how points work | [points and season zero](points.html) |
+| know how points and the King Drop work | [points and the King Drop](points.html) |
 | understand the risks | [risks](risks.html) |
 {: .left}
 
