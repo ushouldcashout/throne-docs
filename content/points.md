@@ -27,6 +27,8 @@ The winning side is the side with more points at the close. Equal points is a dr
 
 **$20,000 of taker volume in the week** is the floor to be paid from that week's drop. Points, seats and check-ins count regardless of the floor; the floor only decides who receives tokens. Your seat on the board shows how far you are from it.
 
+Every share of the drop is paid out to wallets past the floor. A piece seat below the floor passes its share to the other qualified pieces on its side; a losing king or queen below the floor passes theirs into the winning side's pool. Nothing is held back.
+
 ## multipliers
 
 | hold through the week | points |
