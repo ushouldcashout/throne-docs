@@ -67,3 +67,11 @@ pre code { border: 0; background: none; padding: 0; }
 
 /* fee table: big numbers */
 .doc article table.fees td:last-child { font-size: 18px; color: var(--gold); font-weight: 600; }
+
+/* top-down flow diagrams (senior / junior vault pages) */
+.doc article .flow { margin: 18px 0 26px; }
+.doc article .flow .step { background: var(--panel); border: 1px solid var(--line2); border-left: 2px solid var(--gold); border-radius: 4px; padding: 12px 16px; }
+.doc article .flow .step b { display: block; font-family: var(--mono); font-size: 12.5px; letter-spacing: .04em; color: var(--mint); margin-bottom: 4px; }
+.doc article .flow .step span { display: block; color: #d7dbd8; font-size: 14px; line-height: 1.55; }
+.doc article .flow .arrow { width: 2px; height: 22px; margin: 0 0 0 28px; background: var(--line2); position: relative; }
+.doc article .flow .arrow::after { content: ""; position: absolute; left: -4px; bottom: -1px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 7px solid var(--gold); }
