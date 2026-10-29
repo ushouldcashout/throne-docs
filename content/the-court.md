@@ -8,6 +8,10 @@ The desk earns fees. The fees pay the people who fund the vault. Those people ar
 
 Traders never need to think about this; the desk works the same whether you care about the court or not. It matters if you want to be on the other side of the trade: funding the venue instead of only using it.
 
+## how the vaults work
+
+Two pages explain the court as a depositor sees it, step by step: the [senior vault](senior-vault.html) (deposit USDG, hold a weekly-priced share) and the [junior vault](junior-vault.html) (stake $THRONE., stand first in line for losses, take the court's income).
+
 ## priority access
 
 The way in for traders is the board. The sixteen pieces on each side, ranked by season points, get **priority access to the court**. How the pieces are scored is on the [points and King Drop](points.html) page. What that access looks like for season zero is announced on [@thronedefi](https://x.com/thronedefi).
