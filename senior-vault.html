@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>the senior vault · throne. docs</title>
+<meta name="description" content="throne. docs: how the desk works, fees, margin, referrals, points, the court.">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://throne.network"><img src="assets/crown.svg" alt="" width="22" height="22"><span>throne<b>.</b></span><em>docs</em></a>
+  <button class="menu" id="menu" aria-label="menu">☰</button>
+  <nav class="links">
+    <a href="https://throne.network">site</a>
+    <a href="https://throne.network/points">points</a>
+    <a class="cta" href="https://trade.throne.network">launch app →</a>
+  </nav>
+</header>
+<div class="wrap">
+  <aside class="side" id="side">
+    <div class="grp">start here</div>
+<a href="index.html">start here</a>
+<a href="how-it-works.html">how the desk works</a>
+<div class="grp">trading</div>
+<a href="markets.html">markets and hours</a>
+<a href="orders-and-margin.html">orders, margin, leverage</a>
+<a href="funding-and-liquidation.html">funding and liquidation</a>
+<a href="fees.html">fees</a>
+<div class="grp">account</div>
+<a href="deposits-and-withdrawals.html">deposits and withdrawals</a>
+<a href="account-and-security.html">account and security</a>
+<div class="grp">programs</div>
+<a href="referrals.html">referrals</a>
+<a href="points.html">points and the King Drop</a>
+<a href="the-court.html">the court and $THRONE.</a>
+<a href="senior-vault.html" class="on">the senior vault</a>
+<a href="junior-vault.html">the junior vault</a>
+<div class="grp">fine print</div>
+<a href="risks.html">risks</a>
+<a href="support.html">support and links</a>
+  </aside>
+  <main class="doc">
+    <article>
+      <h1 id="the-senior-vault">the senior vault</h1>
+<p>deposit USDG. hold a share. the share is priced once a week.</p>
+<h2 id="what-it-is">what it is</h2>
+<p>The senior vault is the court's main pool. You deposit USDG, the vault supplies all of it to a lending vault on Robinhood Chain (the Steakhouse USDG vault on Morpho), and the desk's fee income is added on top. Everything settles once per 7-day epoch. Between settlements nothing moves: the share price is fixed from one close to the next, so there is nothing to time and nothing to front-run.</p>
+<p>Your position is an ERC-20 share (<code>svUSDG</code>). It is transferable. One share price, written at every close, converts shares to USDG and back.</p>
+<p>Senior is senior because it is paid before the junior vault: when the lending vault loses money, the <a href="junior-vault.html">junior vault</a> absorbs that loss first, up to everything it holds, before a senior share is marked down.</p>
+<h2 id="the-flow-of-a-deposit">the flow of a deposit</h2>
+<div class="flow">
+<div class="step"><b>1 · you hold USDG</b><span>USDG on Robinhood Chain, in a wallet you control. Connect it on the court page and approve the vault to pull the amount.</span></div>
+<div class="arrow"></div>
+<div class="step"><b>2 · request a deposit</b><span>Your USDG moves into the vault and waits. It is not supplied anywhere yet and it earns nothing yet: it is held idle until the epoch closes, so nobody who is already in can be diluted by money that has not been priced. One open request per wallet; add to it any time before the close. The request is refused if the vault is at its cap, if deposits are paused, or if the lending vault's share price is below where it was at the last close.</span></div>
+<div class="arrow"></div>
+<div class="step"><b>3 · the epoch closes</b><span>Every 7 days. The vault reads what it is worth right now (idle USDG plus its lending-vault position plus this week's fee income), compares it with last week's book, and writes the new share price. Then every pending deposit of the week is minted into shares at that price in one step, your USDG is netted against anyone leaving that week, and the rest is supplied to the lending vault.</span></div>
+<div class="arrow"></div>
+<div class="step"><b>4 · claim your shares</b><span>After the close your shares are waiting in the vault. Claim them to your wallet in one transaction. They are yours from that point: hold, transfer, or queue them to exit.</span></div>
+<div class="arrow"></div>
+<div class="step"><b>5 · earn</b><span>From the next close on, your shares carry the vault's results: lending interest, the desk's fee income for the week, and any loss the lending vault takes that the junior vault could not cover. The price moves once a week, at the close, and at no other time.</span></div>
+</div>
+
+<h2 id="the-flow-of-a-withdrawal">the flow of a withdrawal</h2>
+<div class="flow">
+<div class="step"><b>1 · request a redeem</b><span>You name how many shares to redeem. They move into the vault's custody at once (they can no longer be transferred or redeemed twice) and are priced at the next close.</span></div>
+<div class="arrow"></div>
+<div class="step"><b>2 · the epoch closes</b><span>The vault strikes the week's price and raises the USDG your shares are worth, in this order: first from the USDG that new depositors brought in this week, then from idle cash, then by redeeming from the lending vault. If the lending vault is not fully liquid that week you are paid what could be raised and the rest of your shares stay queued, at full exposure, for the following close. Nothing is lost by waiting.</span></div>
+<div class="arrow"></div>
+<div class="step"><b>3 · claim your USDG</b><span>The USDG raised for you is set aside in the vault, excluded from everyone else's price, until you claim it. Claim all of it or part of it, whenever you like.</span></div>
+</div>
+
+<p>A deposit and a redeem in the same epoch never returns more than you put in, and a loss recognised at a close is always applied before anyone leaving that week is paid.</p>
+<h2 id="the-numbers-that-govern-it">the numbers that govern it</h2>
+<table class="left">
+<thead>
+<tr>
+<th>what</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>epoch</td>
+<td>7 days</td>
+</tr>
+<tr>
+<td>who closes it</td>
+<td>the keeper at the boundary; anyone after 6 hours</td>
+</tr>
+<tr>
+<td>share token</td>
+<td>svUSDG, ERC-20, transferable</td>
+</tr>
+<tr>
+<td>price changes</td>
+<td>only at a close</td>
+</tr>
+<tr>
+<td>cap</td>
+<td>set by governance, raised only through a 7-day timelock</td>
+</tr>
+<tr>
+<td>lending vault</td>
+<td>Steakhouse USDG (Morpho Vaults V2), on Robinhood Chain</td>
+</tr>
+<tr>
+<td>migration</td>
+<td>7-day timelocked, Morpho Vault V2 only, 0.5% max slippage, sentinel can cancel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-can-go-wrong">what can go wrong</h2>
+<p><strong>The lending vault loses money.</strong> The loss shows up at the close as a lower price. If the junior vault is wired it pays first, from its own USDG and its own lending-vault position, up to everything it holds. What it cannot cover lands on senior. Deposits pause automatically while the lending vault's share price sits below its last-close level.</p>
+<p><strong>The lending vault is illiquid.</strong> Redeems are filled with what can be raised and the rest rolls to the next close. Deposits still work.</p>
+<p><strong>Total wipeout.</strong> If a close ever prices the vault at zero, deposits are refused for good and any deposit still pending at that close is refundable one for one. The vault is not reset; a new one would be deployed.</p>
+<p><strong>A close is late.</strong> Missed epochs are caught up in one call with one live valuation; no interpolation, no smoothing. If a late close would leave less than half an epoch before the next boundary, the next epoch is absorbed into the catch-up too, so there is never a days-long epoch that someone could jump into for a slice of a week's fees.</p>
+<blockquote>
+<p>Nothing on this page is an offer, a promise of yield, or financial advice. Read the <a href="risks.html">risks</a> and the <a href="https://throne.network/terms">terms</a>.</p>
+</blockquote>
+    </article>
+    <footer class="foot">
+      <span>updated 29 oct 2026</span>
+      <span>in the seat · <a href="https://x.com/thronedefi" target="_blank" rel="noreferrer">join us on twitter</a></span>
+    </footer>
+  </main>
+  <aside class="toc"><div class="toc">
+<ul>
+<li><a href="#what-it-is">what it is</a></li>
+<li><a href="#the-flow-of-a-deposit">the flow of a deposit</a></li>
+<li><a href="#the-flow-of-a-withdrawal">the flow of a withdrawal</a></li>
+<li><a href="#the-numbers-that-govern-it">the numbers that govern it</a></li>
+<li><a href="#what-can-go-wrong">what can go wrong</a></li>
+</ul>
+</div>
+</aside>
+</div>
+<script>
+  document.getElementById('menu').onclick = () => document.getElementById('side').classList.toggle('open');
+  document.querySelectorAll('.side a').forEach(a => a.addEventListener('click', () => document.getElementById('side').classList.remove('open')));
+</script>
+</body>
+</html>
