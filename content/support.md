@@ -8,7 +8,6 @@ where to find us, and how to tell it's us.
 |---|---|
 | the desk | [trade.throne.network](https://trade.throne.network) |
 | site | [throne.network](https://throne.network) |
-| points | [throne.network/points](https://throne.network/points) |
 | terms | [throne.network/terms](https://throne.network/terms) |
 | X | [@thronedefi](https://x.com/thronedefi) |
 {: .left}

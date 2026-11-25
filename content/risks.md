@@ -28,7 +28,7 @@ Perpetual futures are restricted or prohibited in some jurisdictions. It is your
 
 ## no advice, no guarantees
 
-Nothing on the desk, the site, these docs or our social accounts is investment advice. Points, referral rewards and any future token are programs that can change or end. Past fee revenue is not a promise of future revenue.
+Nothing on the desk, the site, these docs or our social accounts is investment advice. Referral rewards and any future token are programs that can change or end. Past fee revenue is not a promise of future revenue.
 
 ## the rule
 

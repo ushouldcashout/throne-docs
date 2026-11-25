@@ -12,12 +12,8 @@ Traders never need to think about this; the desk works the same whether you care
 
 Two pages explain the court as a depositor sees it, step by step: the [senior vault](senior-vault.html) (deposit USDG, hold a weekly-priced share) and the [junior vault](junior-vault.html) (stake $THRONE., stand first in line for losses, take the court's income).
 
-## priority access
-
-The way in for traders is the board. The sixteen pieces on each side, ranked by season points, get **priority access to the court**. How the pieces are scored is on the [points and King Drop](points.html) page. What that access looks like for season zero is announced on [@thronedefi](https://x.com/thronedefi).
-
 ## $THRONE.
 
-$THRONE. is the token of the venue. Holding it through a week earns more points on the desk (100,000 for 1.25x, 500,000 for 1.5x), and 3% of supply is distributed to traders through the weekly [King Drop](points.html). Further details on its role and supply are announced on @thronedefi and written here when they are public. Anything you read elsewhere before that is not from us.
+$THRONE. is the token of the venue. Further details on its role and supply are announced on @thronedefi and written here when they are public. Anything you read elsewhere before that is not from us.
 
 > Nothing on this page is an offer, a promise of yield, or financial advice. Read the [risks](risks.html) and the [terms](https://throne.network/terms).

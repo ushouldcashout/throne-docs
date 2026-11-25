@@ -7,7 +7,7 @@ throne. is a desk for stocks and crypto perps, open 24/7, on robinhood chain. th
 - Trade perpetual futures on major stocks and crypto, around the clock, including when the stock market is closed.
 - Fund with **USDG on Robinhood Chain**, or send **USDC from a supported chain** and it lands in the same account.
 - Pay one flat fee: **4.5 bps taker, 0 bps maker**. No tiers, no hidden lines.
-- Earn **points** on every taker trade during season zero, and **40% of the desk's fee revenue** on trades made by people you refer.
+- Earn **40% of the desk's fee revenue** on trades made by people you refer.
 
 ## three things to know before your first trade
 
@@ -23,7 +23,6 @@ throne. is a desk for stocks and crypto perps, open 24/7, on robinhood chain. th
 | see exactly what a trade costs | [fees](fees.html) |
 | fund an account | [deposits and withdrawals](deposits-and-withdrawals.html) |
 | earn from referrals | [referrals](referrals.html) |
-| know how points and the King Drop work | [points and the King Drop](points.html) |
 | understand the risks | [risks](risks.html) |
 {: .left}
 

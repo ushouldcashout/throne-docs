@@ -12,7 +12,7 @@ The vault is the capital behind the venue. People who fund it are the reason the
 
 ## the court
 
-The court is the name for the people who fund the vault and hold its seats. Priority access to the court is the reward for the most active traders each season. We publish who qualifies and when on [@thronedefi](https://x.com/thronedefi); the mechanics of the court itself are announced there, not here.
+The court is the name for the people who fund the vault and hold its seats. The mechanics of the court are announced on [@thronedefi](https://x.com/thronedefi), not here.
 
 ## what runs where
 
@@ -21,7 +21,6 @@ The court is the name for the people who fund the vault and hold its seats. Prio
 | trading, margin, liquidation, settlement | Robinhood Chain (chain id 4663) |
 | collateral | USDG on Robinhood Chain; USDC accepted from supported chains |
 | account balance | shown in USD terms |
-| points | scored from the venue's public rows, shown at [throne.network/points](https://throne.network/points) and the [board](https://throne.network/board) |
 | referrals | on the desk under **Referrals** |
 {: .left}
 
@@ -29,8 +28,5 @@ The court is the name for the people who fund the vault and hold its seats. Prio
 
 | date | what |
 |---|---|
-| 25 sep 2026 | desk opens to the public. season zero points start. |
-| 26 sep 2026 | season zero trading competition announced on @thronedefi |
-| 2 oct – 2 dec 2026 | competition scoring window |
-| 2 dec 2026 | season zero ends |
+| 25 sep 2026 | desk opens to the public. |
 {: .left}
